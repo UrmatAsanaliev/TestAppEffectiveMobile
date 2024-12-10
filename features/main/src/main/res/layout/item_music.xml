@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginEnd="68dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@drawable/bg_image"
+        android:src="@drawable/music_img_2"
+        android:id="@+id/rv_icon"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/title_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixteen"
+        android:id="@+id/rv_title"
+        android:text="Die Antwoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rv_city"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/regular"
+        android:textSize="@dimen/fourteen"
+        android:text="Будапешт"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/airplane_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/rv_price"
+            android:textSize="@dimen/fourteen"
+            android:text="от 22 264 ₽ "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+</LinearLayout>

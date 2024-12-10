@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.x.main.ui.fragment.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_chooseCountryFragment"
+            app:destination="@id/chooseCountryFragment">
+            <argument
+                android:name="from"
+                android:defaultValue='""'
+                app:argType="string" />
+            <argument
+                android:name="where"
+                android:defaultValue='""'
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/chooseCountryFragment"
+        android:name="com.x.main.ui.fragment.country.ChooseCountryFragment"
+        android:label="ChooseCountryFragment"
+        tools:layout="@layout/fragment_choose_country">
+        <argument
+            android:name="from"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="where"
+            android:defaultValue='""'
+            app:argType="string" />
+        <action
+            android:id="@+id/action_chooseCountryFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" >
+            <argument
+                android:name="from"
+                android:defaultValue='""'
+                app:argType="string" />
+            <argument
+                android:name="where"
+                android:defaultValue='""'
+                app:argType="string" />
+            <argument
+                android:name="time"
+                android:defaultValue='""'
+                app:argType="string"/>
+
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.x.main.ui.fragment.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search"/>
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.x.main.ui.fragment.ticket.TicketFragment"
+        android:label="TicketFragment"
+        tools:layout="@layout/fragment_ticket">
+        <argument
+            android:name="from"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="where"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="time"
+            android:defaultValue='""'
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.x.main.ui.basic_fragments.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/hotelsFragment"
+        android:name="com.x.main.ui.basic_fragments.HotelsFragment"
+        android:label="fragment_hotels"
+        tools:layout="@layout/fragment_hotels" />
+    <fragment
+        android:id="@+id/notFragment"
+        android:name="com.x.main.ui.basic_fragments.NotFragment"
+        android:label="fragment_not"
+        tools:layout="@layout/fragment_not" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.x.main.ui.basic_fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/mainFlowFragment"
+        android:name="com.x.main.ui.fragment.main_flow.MainFlowFragment"
+        android:label="MainFlowFragment"
+        tools:layout="@layout/fragment_main_flow"/>
+</navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_airplane"
+        android:title="Авиабилеты" />
+
+    <item
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/hotelsFragment"
+        android:icon="@drawable/ic_bed"
+        android:title="Отели" />
+
+    <item
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/cartFragment"
+        android:icon="@drawable/ic_card"
+        android:title="Короче" />
+
+    <item
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/notFragment"
+        android:icon="@drawable/ic_not"
+        android:title="Подписки" />
+
+    <item
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Профиль" />
+
+</menu>

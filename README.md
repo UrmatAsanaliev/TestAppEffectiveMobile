@@ -9,9 +9,8 @@ The technologies used:
 6. MVVM
 7. Koin
 8. ViewBinding
-9. Binding Delegate
-10. XML
-11. SharedPreferences
+9. XML
+10. SharedPreferences
 
 Photos:
 <img width="323" alt="Снимок экрана 2024-12-10 в 21 57 25" src="https://github.com/user-attachments/assets/68a5ced6-8f68-4483-b54f-e2500e851477">
